@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <form action="">
+            <input type="text" autocomplete="off" id="searchInput"
+            placeholder="Enter any city Name">
+            <button>
+                <i class="fa-solid fa-magnifying-glass" id="valueSearch"></i>
+            </button>
+        </form>
+
+        <section class="result">
+            <figure class="name" id="city">
+               <figcaption>Lagos</figcaption>
+               <img src="https://flagsapi.com/NG/shiny/32.png">
+            </figure>
+            <figure class="temperature" id="temperature">
+               
+                  <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                <figcaption>
+
+                    <span>31&deg;</span>
+
+                </figcaption>
+            </figure>
+           
+            <p class="description">Overcast clouds
+            </p>
+
+            <ul>
+                <li>
+                    <span>clouds</span>
+                    <img src="weather/cloud.svg" class="image">
+                    <span id="clouds">98</span>%
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <img src="weather/droplet.svg" class="image">
+                    <span id="humidity">55</span>%
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <img src="weather/gauge.svg" class="image">
+                    <span id="pressure">1001</span>hPa
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <script src="script.js" ></script>
+</body>
+</html>
